@@ -1,5 +1,5 @@
 html {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 body {
@@ -8,11 +8,11 @@ body {
 }
 
 a {
-    color: #3fba8d;
+    color: #403f3c;
 }
 
 a:visited {
-    color: #8a0423;
+    color: #f7f2e1;
 }
 
 a:hover {
