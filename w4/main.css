@@ -1,0 +1,20 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: blueviolet;
+    color: goldenrod;
+}
+
+a {
+    color: #403f3c;
+}
+
+a:visited {
+    color: #f7f2e1;
+}
+
+a:hover {
+    color: #e88b43;
+}
