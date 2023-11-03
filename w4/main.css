@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    background-color: blueviolet;
-    color: goldenrod;
+    background-color: #8a2be2;
+    color: #daa520;
 }
 
 a {
@@ -12,9 +12,16 @@ a {
 }
 
 a:visited {
-    color: #f7f2e1;
+    color: #371f76;
 }
 
 a:hover {
     color: #e88b43;
+}
+
+table, tr, th, td, caption {
+    border: 8px solid #2f4f4f;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
 }

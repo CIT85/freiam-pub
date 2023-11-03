@@ -9,18 +9,30 @@
     <link rel="icon" href="hypno.png" type="icon/x-icon">
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Return to the Main Page</a>
-            </li>
-        </ul>
-    </nav>
 
-    <h1>My Goals</h1>
-    <section>
-        <h2>Goals for Academic Life</h2>
+<body>
+    <header>
+        <h1>Week 4 HTML</h1>
+    
+        <nav aria-labelledby="Page-Links">
+            <h3 id="Page-Links">Links</h3>
+            <ul>
+                <li>
+                    <a href="index.html">Main Page</a>
+                </li>
+                <li>
+                    <a href="goals.html">What Do I Wish to Accomplish?</a>
+                </li>
+                <li>
+                    <a href="learn-more.html">Understanding HTML Further</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <article id="Goals">
+        <h2>My Goals</h2>
+        <h3>Goals for Academic Life</h3>
         <p>
             My <strong>long-term</strong> goals for the future in academics are to get a Certificate in Web Page Development. I've always wanted to focus on programming for a career sense, and developing/designing webpages is an aspect that piques my interest.
         </p>
@@ -32,9 +44,7 @@
                 </p>
             </figcaption>
         </figure>
-    </section>
-    <section>
-        <h2>Major Personal Goals</h2>
+        <h3>Major Personal Goals</h3>
         <ol>    
             <li>
             Get a better job than my current part time position.
@@ -68,17 +78,22 @@
                 </figcaption>
             </figure>                
             </li>
+            <li>
+                End the reign of terror from the beast
+                <figure>
+                    <img src="img/SilenceQuinaUser.png" width="250" height="200" alt="Silence, Quina User">
+                </figure>
+            </li>
         </ul>
-    </section>
-    <nav>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        <a href="index.html">Return to the Main Page</a>
-        &nbsp; | 
-        <a href="https://github.com/CIT85" target="_blank">The Github Organization CIT 85 Page</a>
-        &nbsp; |
-        &copy; Freia Masters
-    </nav>
+    </article>
+    </main>
+    <footer>
+        <nav aria-label="Alternate-Navigations">
+            <h3 id="Alternate-Navigations">Other Resources</h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;<a href="index.html">Return to the Main Page</a>&nbsp; | <a href="https://github.com/CIT85" target="_blank">The Github Organization CIT 85 Page</a>&nbsp; |&copy; Freia Masters
+            </p>
+        </nav>
+    </footer>
 </body>
 </html>

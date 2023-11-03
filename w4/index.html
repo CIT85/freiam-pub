@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav>
+    <header>
+    <h1>Week 4 Group Work</h1>
+
+    <nav aria-labelledby="Page-Links">
+        <h3 id="Page-Links">Links</h3>
         <ul>
             <li>
                 <a href="index.html">Main Page</a>
@@ -23,15 +27,17 @@
             </li>
         </ul>
     </nav>
-    
-    <h1>Why Take This Course?</h1>
-    <section>
-        <h2>What is the purpose of learning HTML?</h2>
+</header>
+
+<main>
+    <article id="Course">
+        <h2>Why Take This Course?</h2>
+        <h3>What is the purpose of learning HTML?</h3>
         <p>
             In the state of the world we live in, the ability to understand and utilize multiple languages is a critical skill for any person to learn. However, the utility of being multilingual isn't exclusive to spoken words. Understanding coding languages is as phenomenal a skill for an individual to learn as learning alternate methods of communication. With technology being such a prominent aspect of the modern day, knowing how to work with it is a major way to take steps forward. 
         </p>
-    </section>
-    <section>
+    </article>
+    <article id="About-Me">
         <h2>Freia's Silly Little Websites</h2>
         <p>Contrasting my general explanation above of understanding the rapidly growing realm of the internet's own specialized language, please take a look at the places I frequent they make me feel good.</p>
         <ul>
@@ -46,20 +52,119 @@
             </li>
             <li>
             <a href="https://en.wikipedia.org/wiki/Non-binary_gender" target="_blank">
-                <img src="Nonbinary-flag.png" width="50" height="30" alt="An image of the non-binary flag, which reflects myself as a person.">
+                <img src="Nonbinary-flag.png" width="64" height="42" alt="An image of the non-binary flag, which reflects myself as a person.">
             </a>
         </li>
         </ul>
-    </section>
-    <nav>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        <a href="index.html">Return to the Main Page</a>
-        &nbsp; | 
-        <a href="https://github.com/CIT85" target="_blank">The Github Organization CIT 85 Page</a>
-        &nbsp; |
-        &copy; Freia Masters
+        <br>
+        <h2>More About Me</h2>
+        <table>
+            <caption><b>My Favorite Things</b></caption>
+            <thead>
+            <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Favorite</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Animal</td>
+                <td>Cats!</td>
+            </tr>
+            <tr>
+                <td>Flower</td>
+                <td>Carnation</td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>Teal</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Hobby</td>
+                <td>Playing Games</td>
+            </tr>
+            <tr>
+                <td>Sleeping</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><i>I'm generally tired and don't do anything else.</i></td>
+            </tr>
+        </tfoot>
+        </table>
+    <aside>
+        <h3>Another detail about me</h3>
+        <details>
+            <summary>Do you know how many cats I have?</summary>
+            <p>I have three cats at my house!</p>
+        </details>
+    </aside>
+    </article>
+    <article id="contact">
+        <h2>But What About You?</h2>
+        <p>Tell me more about yourself if you're here!</p>
+
+        <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+        <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Joe" autocomplete="on" required autofocus>
+        </p>
+        <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Surname" autocomplete="on" required>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Feel free to say anything" required>
+        </p>
+        <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="1112223344" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+        </p>
+        <p>
+            <label for="birth">Birth Month:</label>
+            <input type="text" name="birth" id="birth" list="birth-month">
+            <datalist id="birth-month">
+                <option value="January">
+                <option value="February">
+                <option value="March">
+                <option value="April">
+                <option value="May">
+                <option value="June">
+                <option value="July">
+                <option value="August">
+                <option value="September">
+                <option value="October">
+                <option value="November">
+                <option value="December">
+            </datalist>
+        </p>
+    </fieldset>
+<br>
+    <fieldset>
+        <legend>Any Feedback?</legend>
+        <label for="message">Your Suggestion:</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+    </fieldset>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+    <button type="reset">Reset</button>
+        </form>
+    </article>
+    <p>httpbin is a site that can be used to see the response of a form such as this in a test environment. Within this environment, the submitted responses are seen in alphabetical order, rather than their order on the form itself, and any that are not responded to are left blank by the site. Submitting will link to the site with the inputs detectable in the site's generated url, where as posting it will not, making it more secure in the scenario where personal information is being submitted.</p>
+</main>
+<footer>
+    <nav aria-label="Alternate-Navigations">
+        <h3 id="Alternate-Navigations">Other Resources</h3>
+        <p>
+            &nbsp;&nbsp;&nbsp;<a href="index.html">Return to the Main Page</a>&nbsp; | <a href="https://github.com/CIT85" target="_blank">The Github Organization CIT 85 Page</a>&nbsp; |&copy; Freia Masters
+        </p>
     </nav>
+</footer>
 </body>
 </html>
