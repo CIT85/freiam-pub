@@ -1,22 +1,23 @@
 html {
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #8a2be2;
-    color: #daa520;
+    background-color: #371f76;
+    color: #EFC88B;
 }
 
 a {
-    color: #403f3c;
+    color: #875053;
 }
 
 a:visited {
-    color: #371f76;
+    color: #8E8DBE;
 }
 
 a:hover {
-    color: #e88b43;
+    color: #D1F0B1;
 }
 
 table, tr, th, td, caption {
@@ -24,4 +25,62 @@ table, tr, th, td, caption {
     font-family: 'Courier New', Courier, monospace;
     border-collapse: collapse;
     padding: 0.5rem;
+}
+
+.background {
+    border: 3px solid black;
+    width: 300px;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 1.5em;
+    padding: 2rem .5rem;
+}
+
+.text {
+    border: 3px solid black;
+    width: 300px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkslategray;
+    background-color: #EFC88B;
+    text-align: center;
+    margin: 1.5em;
+    padding: 2rem .5rem;
+}
+
+.link {
+    border: 3px solid black;
+    width: 300px;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: #875053;
+    text-align: center;
+    margin: 1.5em;
+    padding: 2rem .5rem;
+}
+
+.visit {
+    border: 3px solid black;
+    width: 300px;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategray;
+    background-color: #8E8DBE;
+    text-align: center;
+    margin: 1.5em;
+    padding: 2rem .5rem;
+}
+
+.hover {
+    border: 3px solid black;
+    width: 300px;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkslategray;
+    background-color: #D1F0B1;
+    text-align: center;
+    margin: 1.5em;
+    padding: 2rem .5rem;
 }
